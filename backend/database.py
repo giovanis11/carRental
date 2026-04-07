@@ -3,7 +3,19 @@ import os
 from sqlalchemy import create_engine
 from sqlalchemy.orm import declarative_base, sessionmaker
 
-DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///./backend/car_rental.db")
+def resolve_database_url() -> str:
+    database_url = os.getenv("DATABASE_URL")
+
+    if database_url:
+        return database_url
+
+    if os.getenv("VERCEL"):
+        return "sqlite:////tmp/car_rental.db"
+
+    return "sqlite:///./backend/car_rental.db"
+
+
+DATABASE_URL = resolve_database_url()
 
 if DATABASE_URL.startswith("postgres://"):
     DATABASE_URL = DATABASE_URL.replace("postgres://", "postgresql://", 1)
