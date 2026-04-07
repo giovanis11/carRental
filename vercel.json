@@ -1,0 +1,22 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "experimentalServices": {
+    "frontend": {
+      "entrypoint": ".",
+      "routePrefix": "/",
+      "framework": "vite"
+    },
+    "backend": {
+      "entrypoint": "backend/main.py",
+      "routePrefix": "/api",
+      "framework": "fastapi",
+      "includeFiles": [
+        "backend/**"
+      ],
+      "excludeFiles": [
+        "backend/__pycache__/**",
+        "backend/car_rental.db"
+      ]
+    }
+  }
+}
