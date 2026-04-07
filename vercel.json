@@ -7,11 +7,11 @@
       "framework": "vite"
     },
     "backend": {
-      "entrypoint": "api/index.py",
+      "entrypoint": "main.py",
       "routePrefix": "/api",
       "framework": "fastapi",
       "includeFiles": [
-        "api/**",
+        "main.py",
         "backend/**"
       ],
       "excludeFiles": [
