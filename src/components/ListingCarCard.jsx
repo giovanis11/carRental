@@ -133,11 +133,11 @@ function ListingCarCard({
             <span className="listing-ad-badge">
               {isSearchAvailable ? "Featured" : "Booked"}
             </span>
+            <span className="listing-class-badge">{car.type}</span>
           </div>
 
           <h3 className="listing-title">
-            {car.name}
-            <span className="listing-title-subtitle">{car.similarLabel}</span>
+            <span>{car.name}</span>
             <button
               type="button"
               className="listing-inline-info listing-tooltip-trigger"
@@ -155,6 +155,9 @@ function ListingCarCard({
               </span>
             </button>
           </h3>
+
+          <p className="listing-title-subtitle">{car.similarLabel}</p>
+          <p className="listing-description">{car.description}</p>
 
           <div className="listing-feature-grid">
             <div className="listing-feature-item">
@@ -176,8 +179,10 @@ function ListingCarCard({
           </div>
 
           <div className="listing-location-block">
-            <div className="listing-location">{car.pickupLocation}</div>
-            <div className="listing-distance">{car.distanceFromCenter}</div>
+            <div>
+              <div className="listing-location">{car.pickupLocation}</div>
+              <div className="listing-distance">{car.distanceFromCenter}</div>
+            </div>
           </div>
         </div>
 
@@ -198,7 +203,7 @@ function ListingCarCard({
           </div>
           <Link
             to={detailsLink}
-            className={`btn listing-deal-button ${isSearchAvailable ? "btn-success" : "btn-outline-secondary"}`}
+            className={`btn listing-deal-button ${isSearchAvailable ? "btn-accent" : "btn-outline-secondary"}`}
           >
             {isSearchAvailable ? "View deal" : "View details"}
           </Link>

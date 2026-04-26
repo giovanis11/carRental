@@ -152,14 +152,14 @@ function HomePage() {
 
                 <div className="home-hero-right">
                   <div className="home-hero-tagline">
-                    <span>Drive now</span>
+                    <span>DriveOn</span>
                     <strong>Travel easy</strong>
                   </div>
                 </div>
               </div>
 
               <div className="home-hero-copy">
-                Choose DriveNow Premium car rental with all essentials included
+                Choose DriveOn Premium car rental with all essentials included
                 at the best price. Flexible booking, no exchange fee, and free
                 cancellation across Spain, Portugal, Italy, and Greece.
               </div>

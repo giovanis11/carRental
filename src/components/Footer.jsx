@@ -5,7 +5,7 @@ function Footer() {
         <div className="footer-panel">
           <div className="row g-4">
             <div className="col-lg-5">
-              <span className="eyebrow">DriveNow</span>
+              <span className="eyebrow">DriveOn</span>
               <h3 className="footer-title">
                 Premium rentals with the polish of a private mobility brand.
               </h3>
@@ -38,7 +38,7 @@ function Footer() {
                 <small className="text-uppercase">Client services</small>
                 <h6 className="mt-2 mb-1">Always on, always human</h6>
                 <p className="mb-0">
-                  hello@drivenow.com
+                  hello@driveon.com
                   <br />
                   +30 210 555 0147
                 </p>
@@ -48,7 +48,7 @@ function Footer() {
 
           <div className="footer-bottom d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-3 mt-4 pt-4">
             <p className="mb-0 footer-copy">
-              © 2026 DriveNow. Designed for modern business and leisure travel.
+              © 2026 DriveOn. Designed for modern business and leisure travel.
             </p>
             <div className="footer-links d-flex flex-wrap gap-3">
               <span>Flexible bookings</span>

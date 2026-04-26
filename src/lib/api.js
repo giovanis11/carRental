@@ -230,6 +230,19 @@ export async function deleteCar(carId) {
   });
 }
 
+export async function fetchBookings() {
+  const bookings = await request("/bookings");
+
+  return bookings.map((booking) => ({
+    id: booking.id,
+    carId: booking.car_id,
+    startDate: booking.start_date,
+    endDate: booking.end_date,
+    customerName: booking.customer_name,
+    email: booking.email,
+  }));
+}
+
 export async function createBooking(payload) {
   return request("/bookings", {
     method: "POST",

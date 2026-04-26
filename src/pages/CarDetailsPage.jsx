@@ -91,9 +91,18 @@ function CarDetailsPage() {
   }
 
   return (
-    <section className="section-space pt-5">
+    <section className="section-space pt-5 details-page">
       <div className="container">
-        <div className="row g-5">
+        <div className="details-topbar">
+          <Link to={listingsLink} className="details-back-link">
+            Back to listings
+          </Link>
+          {searchLocation ? (
+            <span className="details-route-chip">{searchLocation}</span>
+          ) : null}
+        </div>
+
+        <div className="row g-4 align-items-start">
           <div className="col-lg-7">
             <div className="details-image-card mb-4">
               <img
@@ -109,8 +118,23 @@ function CarDetailsPage() {
 
             <div className="details-info-card">
               <div className="d-flex flex-wrap justify-content-between gap-3 align-items-start mb-4">
-                <div>
-                  <span className="badge car-type-badge mb-2">{car.type}</span>
+                <div className="details-heading-copy">
+                  <div className="details-badge-row">
+                    <span className="badge car-type-badge">{car.type}</span>
+                    <span
+                      className={`details-status-badge ${
+                        hasDateSearch && !car.searchAvailable ? "is-tight" : "is-live"
+                      }`}
+                    >
+                      {hasDateSearch
+                        ? car.searchAvailable
+                          ? "Available for your dates"
+                          : "Booked for your dates"
+                        : car.available
+                          ? "Available now"
+                          : "Unavailable"}
+                    </span>
+                  </div>
                   <h1 className="section-title mb-2">{car.name}</h1>
                   <p className="section-copy mb-0">{car.description}</p>
                 </div>
