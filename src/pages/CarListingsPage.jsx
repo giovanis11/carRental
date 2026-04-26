@@ -22,7 +22,7 @@ function calculateRentalDays(startDate, endDate) {
 }
 
 function CarListingsPage() {
-  const [searchParams] = useSearchParams();
+  const [searchParams, setSearchParams] = useSearchParams();
   const [cars, setCars] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState("");
@@ -199,6 +199,18 @@ function CarListingsPage() {
     );
   };
 
+  const clearAllFilters = () => {
+    setSelectedType("All");
+    setMaxPrice(200);
+    setOnlyAvailable(false);
+    setSelectedSeats([]);
+    setSelectedTransmissions([]);
+    setSelectedBagCounts([]);
+    setSortMode("recommended");
+    setMobileFiltersOpen(false);
+    setSearchParams({});
+  };
+
   const mobileMapUrl = searchLocation
     ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
         searchLocation
@@ -228,15 +240,7 @@ function CarListingsPage() {
               <button
                 type="button"
                 className="filter-clear-button"
-                onClick={() => {
-                  setSelectedType("All");
-                  setMaxPrice(200);
-                  setOnlyAvailable(false);
-                  setSelectedSeats([]);
-                  setSelectedTransmissions([]);
-                  setSelectedBagCounts([]);
-                  setSortMode("recommended");
-                }}
+                onClick={clearAllFilters}
               >
                 Clear all filters
               </button>
@@ -496,11 +500,18 @@ function CarListingsPage() {
             {!isLoading && !error && filteredCars.length === 0 ? (
               <div className="empty-state text-center">
                 <h2 className="mb-3">No cars match this search</h2>
-                <p className="text-secondary mb-0">
+                <p className="text-secondary mb-4">
                   {hasDateSearch
                     ? "Try different dates or relax one of the filters to see more options."
                     : "Try a higher price ceiling or switch to a different category."}
                 </p>
+                <button
+                  type="button"
+                  className="btn btn-accent"
+                  onClick={clearAllFilters}
+                >
+                  Clear all filters
+                </button>
               </div>
             ) : null}
 
