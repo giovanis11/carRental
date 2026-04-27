@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import lekscarLogo from "../assets/lekscar-logo.png";
 
 function formatDate(offsetDays = 0) {
   const date = new Date();
@@ -54,10 +55,17 @@ function HomePage() {
             <div className="home-hero-scene">
               <div className="home-hero-content">
                 <div className="home-hero-left">
-                  <h1 className="home-hero-title">Car Rental</h1>
+                  <h1 className="home-hero-title">
+                    Premium car rental with
+                    <span> no hidden fees</span>
+                  </h1>
+                  <p className="home-hero-lead">
+                    LEKSCAR RENTAL keeps booking simple with clear pricing,
+                    quick pickup, and a polished experience from search to key handover.
+                  </p>
 
                   <form className="home-booking-card" onSubmit={handleSubmit}>
-                    <div className="home-booking-card-title">Pick-up and drop-off</div>
+                    <div className="home-booking-card-title">Rent car: pick-up and drop-off</div>
 
                     <div className="home-booking-location-row">
                       <input
@@ -145,23 +153,36 @@ function HomePage() {
                     </div>
 
                     <button type="submit" className="btn home-search-button">
-                      Search
+                      Search rentals
                     </button>
                   </form>
                 </div>
 
                 <div className="home-hero-right">
-                  <div className="home-hero-tagline">
-                    <span>DriveOn</span>
-                    <strong>Travel easy</strong>
+                  <div className="home-hero-brand-card">
+                    <div className="home-hero-logo-shell">
+                      <img
+                        src={lekscarLogo}
+                        alt="LEKSCAR RENTAL logo"
+                        className="home-hero-logo"
+                      />
+                    </div>
+                    <div className="home-hero-tagline">
+                      <span>LEKSCAR</span>
+                      <strong>RENTAL</strong>
+                    </div>
+                    <p className="home-hero-slogan">
+                      Gold-standard service for airport arrivals, city pickups,
+                      and flexible trips across Greece.
+                    </p>
                   </div>
                 </div>
               </div>
 
               <div className="home-hero-copy">
-                Choose DriveOn Premium car rental with all essentials included
-                at the best price. Flexible booking, no exchange fee, and free
-                cancellation across Spain, Portugal, Italy, and Greece.
+                Book with LEKSCAR RENTAL for transparent pricing, free
+                cancellation on selected deals, and fast collection that keeps
+                your journey moving.
               </div>
             </div>
           </div>
@@ -173,20 +194,20 @@ function HomePage() {
           <div className="row g-3">
             <div className="col-md-4">
               <div className="home-highlight-card">
-                <strong>All-inclusive premium</strong>
-                <span>Road assistance, transparent pricing, and modern fleet quality.</span>
+                <strong>Transparent pricing</strong>
+                <span>No hidden fees, clear daily rates, and straightforward booking terms.</span>
               </div>
             </div>
             <div className="col-md-4">
               <div className="home-highlight-card">
-                <strong>Free cancellation</strong>
-                <span>Change your plans without stress and keep your booking flexible.</span>
+                <strong>Flexible booking</strong>
+                <span>Change your plans without stress and keep your reservation adaptable.</span>
               </div>
             </div>
             <div className="col-md-4">
               <div className="home-highlight-card">
                 <strong>Fast collection</strong>
-                <span>Airport and city offices designed for quick pick-up and drop-off.</span>
+                <span>Airport and city handovers designed for quick pick-up and drop-off.</span>
               </div>
             </div>
           </div>

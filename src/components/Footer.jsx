@@ -5,21 +5,21 @@ function Footer() {
         <div className="footer-panel">
           <div className="row g-4">
             <div className="col-lg-5">
-              <span className="eyebrow">DriveOn</span>
+              <span className="eyebrow">LEKSCAR RENTAL</span>
               <h3 className="footer-title">
-                Premium rentals with the polish of a private mobility brand.
+                Premium rentals with transparent pricing and a polished handover.
               </h3>
               <p className="mb-0 footer-copy">
-                Curated vehicles, frictionless pickup, and a booking flow built
-                to feel calm, fast, and premium.
+                Airport-ready vehicles, quick collection, and a booking flow
+                built to feel clear, fast, and premium.
               </p>
             </div>
 
             <div className="col-sm-6 col-lg-2">
               <h6 className="footer-heading">Explore</h6>
               <div className="footer-stack">
-                <span>Luxury SUVs</span>
-                <span>Executive sedans</span>
+                <span>City cars</span>
+                <span>Family options</span>
                 <span>Airport pickup</span>
               </div>
             </div>
@@ -28,19 +28,19 @@ function Footer() {
               <h6 className="footer-heading">Company</h6>
               <div className="footer-stack">
                 <span>About</span>
-                <span>Pricing</span>
+                <span>No hidden fees</span>
                 <span>Support</span>
               </div>
             </div>
 
             <div className="col-lg-3">
               <div className="footer-contact-card">
-                <small className="text-uppercase">Client services</small>
-                <h6 className="mt-2 mb-1">Always on, always human</h6>
+                <small className="text-uppercase">Reservations support</small>
+                <h6 className="mt-2 mb-1">Fast help when plans change</h6>
                 <p className="mb-0">
-                  hello@driveon.com
+                  Airport and city pickup
                   <br />
-                  +30 210 555 0147
+                  Flexible booking assistance
                 </p>
               </div>
             </div>
@@ -48,11 +48,11 @@ function Footer() {
 
           <div className="footer-bottom d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-3 mt-4 pt-4">
             <p className="mb-0 footer-copy">
-              © 2026 DriveOn. Designed for modern business and leisure travel.
+              © 2026 LEKSCAR RENTAL. Designed for smooth business and leisure travel.
             </p>
             <div className="footer-links d-flex flex-wrap gap-3">
               <span>Flexible bookings</span>
-              <span>Curated fleet</span>
+              <span>No hidden fees</span>
               <span>24/7 support</span>
             </div>
           </div>

@@ -201,11 +201,12 @@ function ListingCarCard({
                 ? "Free cancellation"
                 : "Limited availability"}
           </div>
+          <div className="listing-fee-copy">No hidden fees</div>
           <Link
             to={detailsLink}
             className={`btn listing-deal-button ${isSearchAvailable ? "btn-accent" : "btn-outline-secondary"}`}
           >
-            {isSearchAvailable ? "View deal" : "View details"}
+            {isSearchAvailable ? "Book now" : "View details"}
           </Link>
         </div>
       </div>

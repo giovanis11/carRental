@@ -1,10 +1,18 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark" data-bs-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DriveOn | Premium Car Rentals</title>
+    <script>
+      (() => {
+        const savedTheme = localStorage.getItem("lekscarTheme");
+        const theme = savedTheme === "light" ? "light" : "dark";
+        document.documentElement.dataset.theme = theme;
+        document.documentElement.dataset.bsTheme = theme;
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

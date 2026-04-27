@@ -1,0 +1,138 @@
+export const buyCars = [
+  {
+    id: 101,
+    name: "Premium Petrol SUV",
+    bodyType: "SUV",
+    price: 28900,
+    year: 2021,
+    mileageKm: 48200,
+    transmission: "Automatic",
+    fuel: "Petrol",
+    location: "Athens",
+    condition: "Certified used",
+    featured: true,
+    image:
+      "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=1200&q=80",
+    description:
+      "Refined compact SUV with premium styling, smooth automatic driving, and everyday usability.",
+  },
+  {
+    id: 102,
+    name: "Compact Automatic Hatchback",
+    bodyType: "Hatchback",
+    price: 24400,
+    year: 2020,
+    mileageKm: 53600,
+    transmission: "Automatic",
+    fuel: "Petrol",
+    location: "Athens",
+    condition: "Low-mileage",
+    featured: true,
+    image:
+      "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1200&q=80",
+    description:
+      "Well-kept hatchback with sharp styling, automatic convenience, and easy city manners.",
+  },
+  {
+    id: 103,
+    name: "Executive Diesel Sedan",
+    bodyType: "Sedan",
+    price: 31900,
+    year: 2022,
+    mileageKm: 41200,
+    transmission: "Automatic",
+    fuel: "Diesel",
+    location: "Glyfada",
+    condition: "Business-class",
+    featured: false,
+    image:
+      "https://images.unsplash.com/photo-1542282088-fe8426682b8f?auto=format&fit=crop&w=1200&q=80",
+    description:
+      "Executive sedan with strong motorway comfort and a composed long-distance driving feel.",
+  },
+  {
+    id: 104,
+    name: "Hybrid Daily Hatchback",
+    bodyType: "Hatchback",
+    price: 21900,
+    year: 2021,
+    mileageKm: 39800,
+    transmission: "Automatic",
+    fuel: "Hybrid",
+    location: "Piraeus",
+    condition: "Economical choice",
+    featured: true,
+    image:
+      "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1200&q=80",
+    description:
+      "Efficient hatchback with low running costs and a practical cabin for everyday use.",
+  },
+  {
+    id: 105,
+    name: "Family Petrol SUV",
+    bodyType: "SUV",
+    price: 33400,
+    year: 2022,
+    mileageKm: 27600,
+    transmission: "Automatic",
+    fuel: "Petrol",
+    location: "Marousi",
+    condition: "Family-ready",
+    featured: false,
+    image:
+      "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=1200&q=80",
+    description:
+      "Balanced family SUV with a high driving position, roomy boot, and clean modern styling.",
+  },
+  {
+    id: 106,
+    name: "City Manual Hatchback",
+    bodyType: "Hatchback",
+    price: 16800,
+    year: 2020,
+    mileageKm: 61400,
+    transmission: "Manual",
+    fuel: "Petrol",
+    location: "Athens Airport",
+    condition: "First-car friendly",
+    featured: false,
+    image:
+      "https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=1200&q=80",
+    description:
+      "Compact hatchback with low ownership costs and a fresh, city-friendly feel.",
+  },
+  {
+    id: 107,
+    name: "Electric Sport Sedan",
+    bodyType: "Sedan",
+    price: 35800,
+    year: 2022,
+    mileageKm: 32100,
+    transmission: "Automatic",
+    fuel: "Electric",
+    location: "Athens",
+    condition: "EV special",
+    featured: true,
+    image:
+      "https://images.unsplash.com/photo-1560958089-b8a1929cea89?auto=format&fit=crop&w=1200&q=80",
+    description:
+      "Modern electric sedan with sleek styling, strong range, and quick charging support.",
+  },
+  {
+    id: 108,
+    name: "Touring Diesel Estate",
+    bodyType: "Estate",
+    price: 22900,
+    year: 2021,
+    mileageKm: 44700,
+    transmission: "Automatic",
+    fuel: "Diesel",
+    location: "Glyfada",
+    condition: "Touring value",
+    featured: false,
+    image:
+      "https://images.unsplash.com/photo-1493238792000-8113da705763?auto=format&fit=crop&w=1200&q=80",
+    description:
+      "Spacious estate with excellent luggage room, efficient cruising, and calm long-distance comfort.",
+  },
+];

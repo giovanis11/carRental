@@ -221,11 +221,11 @@ function CarListingsPage() {
     <section className="section-space pt-5">
       <div className="container listings-page-shell">
         <div className="listings-page-intro mb-4">
-          <span className="eyebrow">Browse fleet</span>
-          <h1 className="section-title mb-2">Choose from premium rentals</h1>
+          <span className="eyebrow">Rent Car</span>
+          <h1 className="section-title mb-2">Choose your rental car</h1>
           <p className="section-copy mb-0">
             Explore flexible daily pricing across small, medium, and larger
-            rental categories.
+            rental categories, with live availability for your dates.
           </p>
         </div>
 
